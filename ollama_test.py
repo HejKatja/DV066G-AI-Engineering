@@ -13,11 +13,11 @@ def main():
                 options={"temperature": temperature}
                 )
 
-            with open("data/responses.csv", "a") as file: 
-                file.write(f"====== MODEL: {model} | TEMP: {temperature} ======\n\n")
-                file.write(f"{response["message"]["content"]}\n\n\n")
-                file.write(f"Time spent generating the responce:  {response.eval_duration / 1000000000}  seconds\n\n")
-                file.write(f"Total time for the request:  {response.total_duration / 1000000000}  seconds\n\n")
+            with open("data/responses.csv", "a", encoding="utf-8") as file: 
+                file.write(f'"====== MODEL: {model} | TEMP: {temperature} ======"\n\n')
+                file.write(f'"{response["message"]["content"]}"\n\n\n')
+                file.write(f'"Time spent generating the responce:  {response.eval_duration / 1000000000}  seconds"\n\n')
+                file.write(f'"Total time for the request:  {response.total_duration / 1000000000}  seconds"\n\n')
                 file.write("-" * 50 + "\n\n")
 
 
