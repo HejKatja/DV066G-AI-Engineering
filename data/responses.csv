@@ -22,33 +22,43 @@ Since the middle term **“man”** is distributed in the first statement (as th
 Moreover, historically Socrates did die around 399 BCE, confirming the truth of the conclusion. So both logically and factually, Socrates is mortal."
 
 
-"Time spent generating the responce:  11.9623875  seconds"
+"Time spent generating the responce:  11.831277834  seconds"
 
-"Total time for the request:  13.458452125  seconds"
+"Total time for the request:  13.123217959  seconds"
+
+"Response generation speed: 5.510816406714095e-08 tokens/seconds"
 
 --------------------------------------------------
 
-"====== MODEL: lfm3:latest | TEMP: 0.7 ======"
+"====== MODEL: lfm3:latest | TEMP: 1.0 ======"
 
-"Yes – that’s a textbook example of a simple **syllogism**.
+"The argument goes like this:
 
-1. **Premise 1 (universal):** *All* men are mortal.  
-   Symbolically: ∀x (Men(x) → Mortal(x))
+1. **Premise:** *All men are mortal.*  
+   Formally: ∀x [Man(x) → Mortal(x)].
 
-2. **Premise 2 (particular instance):** *Socrates* is a man.  
-   Symbolically: Men(Socrates)
+2. **Premise / Given:** *Socrates is a man.*  
+   Formally: Man(Socrates).
 
-3. **Conclusion:** From premises 1 and 2 we infer:  
-   Men(Socrates) ∧ Mortal(Any man) ⇒ Mortal(Socrates).
+3. **Conclusion:** *Therefore, Socrates is mortal.*  
+   From 1 & 2: Since every thing that is a man is mortal, and Socrates is one such thing (a man), Socrates must be mortal.
 
-In other words, because every member of the class “men” has the property “mortal,” and Socrates belongs to that class, Socrates must possess that property too.  
+This is exactly the pattern of a **categorical syllogism** (modus Barbara):
 
-So, given the premises, the logical result—**Socrates is mortal**—follows directly (modus ponens). This is why the argument is considered sound."
+- All‑A (men) are B (mortal).  
+- C is A (Socrates is a man).  
+- Therefore, C is B (Socrates is mortal).
+
+Because the premises hold in reality—historians agree that Socrates lived and died, and “all men” includes everyone including him—it’s not just a formal proof; it’s also factually correct that Socrates was mortal.
+
+So **yes**, given the two statements, we can logically deduce that Socrates is mortal."
 
 
-"Time spent generating the responce:  7.92190225  seconds"
+"Time spent generating the responce:  13.024511166  seconds"
 
-"Total time for the request:  7.970895459  seconds"
+"Total time for the request:  13.067098208  seconds"
+
+"Response generation speed: 5.497327238423283e-08 tokens/seconds"
 
 --------------------------------------------------
 
@@ -66,32 +76,32 @@ Here is the breakdown of the logic:
 The second premise ("Socrates is a man") acts as a bridge. Because Socrates is a man, and the first premise states that *all* men are mortal, it follows that Socrates must be mortal. The conclusion is necessarily true if the premises are true."
 
 
-"Time spent generating the responce:  2.346276584  seconds"
+"Time spent generating the responce:  2.28063775  seconds"
 
-"Total time for the request:  4.451219917  seconds"
+"Total time for the request:  4.474997584  seconds"
+
+"Response generation speed: 6.796344575108432e-08 tokens/seconds"
 
 --------------------------------------------------
 
-"====== MODEL: lfm3-omni:latest | TEMP: 0.7 ======"
+"====== MODEL: lfm3-omni:latest | TEMP: 1.0 ======"
 
-"Yes, that is a valid and correct logical argument. It is a classic example of a valid syllogism.
+"Yes, the conclusion is valid. This is a classic example of a **syllogism**.
 
 Here is the breakdown of the logic:
 
-1.  **Major Premise:** All men are mortal. (This is a universal statement that applies to everyone.)
-2.  **Minor Premise:** Socrates is a man. (This is a specific statement about Socrates.)
-3.  **Conclusion:** Therefore, Socrates is mortal. (This follows logically from the premises.)
+1.  **Major Premise:** All men are mortal.
+2.  **Minor Premise:** Socrates is a man.
+3.  **Conclusion:** Therefore, Socrates is mortal.
 
-**Why it works:**
-In logic, if the first premise ("All X are Y") is true and the second premise ("S specific X") is true, the conclusion ("S is Y") must be true. Since Socrates is a man, and all men are mortal, it follows that Socrates is mortal.
-
-**Note on the "Truth" of the Premises:**
-While the *logic* is sound, the *premises* must be true for the argument to be valid. In this specific case, the premise "All men are mortal" is widely accepted as true in everyday reasoning. However, in philosophy and logic, "All men are mortal" is considered **false**. This is because some men (such as gods, angels, or mythical creatures) are not mortal. If the premises were false, the conclusion would be a false conclusion, even though the logical structure is correct."
+Because the second premise states that Socrates is a member of the group "men," and the first premise states that *all* men are mortal, it logically follows that Socrates must be mortal."
 
 
-"Time spent generating the responce:  4.420228208  seconds"
+"Time spent generating the responce:  1.564161958  seconds"
 
-"Total time for the request:  4.448790208  seconds"
+"Total time for the request:  1.603434459  seconds"
+
+"Response generation speed: 6.712859845681019e-08 tokens/seconds"
 
 --------------------------------------------------
 
@@ -102,30 +112,259 @@ While the *logic* is sound, the *premises* must be true for the argument to be v
 This is a classic example of a **valid categorical syllogism**. In formal logic, it follows the structure known as **Barbara** (AAA-1). Because the premises ("All men are mortal" and "Socrates is a man") are accepted as true, the conclusion ("Socrates is mortal") necessarily follows."
 
 
-"Time spent generating the responce:  27.298967625  seconds"
+"Time spent generating the responce:  27.012171792  seconds"
 
-"Total time for the request:  30.186198  seconds"
+"Total time for the request:  29.8657595  seconds"
+
+"Response generation speed: 2.7876322044679523e-08 tokens/seconds"
 
 --------------------------------------------------
 
-"====== MODEL: qwen3.5:4b | TEMP: 0.7 ======"
+"====== MODEL: qwen3.5:4b | TEMP: 1.0 ======"
 
-"Yes, that is a **logically valid** argument.
+"Yes, that statement is **logically valid**.
 
-It is one of the most famous examples of **categorical syllogism** in logic and philosophy. Here is why:
+It is a classic example of a **categorical syllogism** (specifically in the form known as *Barbara* in Aristotelian logic). Here is why:
 
-1.  **Formal Validity**: The structure follows the rule where if two premises are true, the conclusion *must* be true.
-    *   Premise 1: All M are P (All men are mortal).
-    *   Premise 2: S is M (Socrates is a man).
-    *   Conclusion: Therefore, S is P (Socrates is mortal).
-2.  **Soundness**: Because the premises are factually true in this context, the argument is also sound.
+1.  **Premise 1:** All men are mortal. (Universal premise)
+2.  **Premise 2:** Socrates is a man. (Particular/Existential premise regarding Socrates)
+3.  **Conclusion:** Therefore, Socrates is mortal.
 
-This specific example comes from Plato's dialogue *Apology* and was famously used by Aristotle to demonstrate deductive reasoning. It remains a standard textbook example of how universal truths applied to specific individuals yield necessary conclusions."
+Since the premises define the properties of "man" and place Socrates within that category, the conclusion follows necessarily from the rules of deductive logic. If both premises are true, the conclusion must be true as well."
 
 
-"Time spent generating the responce:  35.075468833  seconds"
+"Time spent generating the responce:  37.055861083  seconds"
 
-"Total time for the request:  35.150834791  seconds"
+"Total time for the request:  37.147542958  seconds"
+
+"Response generation speed: 2.809272189541903e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: gemma4:e2b | TEMP: 0.0 ======"
+
+"This argument is **logically valid**.
+
+It follows a classic structure called a syllogism:
+
+1. **Major Premise:** All men are mortal. (General rule)
+2. **Minor Premise:** Socrates is a man. (Specific case)
+3 **Conclusion:** Therefore, Socrates is mortal. (Application of the rule)
+
+If you accept the premises as true (which they are in this context), the conclusion **must** be true."
+
+
+"Time spent generating the responce:  3.974755333  seconds"
+
+"Total time for the request:  9.328320833  seconds"
+
+"Response generation speed: 9.484860536446005e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: gemma4:e2b | TEMP: 1.0 ======"
+
+"This argument is **logically valid**.
+
+It follows a classic form of deductive reasoning (a syllogism). If we accept the premises as true, the conclusion must necessarily follow:
+
+1. **Major Premise:** All men are mortal. (General rule)
+2. **Minor Premise:** Socrates is a man. (Specific instance)
+3 **Conclusion:** Therefore, Socrates is mortal. (Specific application of the rule)
+
+Since the structure is sound, the conclusion is guaranteed if the premises are true."
+
+
+"Time spent generating the responce:  4.731049625  seconds"
+
+"Total time for the request:  4.732235833  seconds"
+
+"Response generation speed: 8.729563896721967e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: lfm3:latest | TEMP: 0.0 ======"
+
+"Yes – the argument is a classic **categorical syllogism** (often called *Barbara*):
+
+1. **Premise 1:** All men are mortal.  
+   (Universal affirmative: “All M → Mortal”)
+
+2. **Premise 2:** Socrates is a man.  
+   (Particular affirmative: “Socrates ∈ M”)
+
+3. **Conclusion:** Therefore, Socrates is mortal.  
+
+In formal terms:
+
+- Let **A** = “is a man”, **B** = “is mortal”.
+- Premise 1: ∀x (Man(x) → Mortal(x))
+- Premise 2: Socrates(Man)
+- Conclusion: Socrates(Mortal)
+
+Since the middle term **“man”** is distributed in the first statement (as the subject of the universal claim) and appears in the second statement as the predicate, the distribution pattern satisfies the rules for a valid syllogism (the middle term must be distributed at least once). Hence the inference is **valid**.
+
+Moreover, historically Socrates did die around 399 BCE, confirming the truth of the conclusion. So both logically and factually, Socrates is mortal."
+
+
+"Time spent generating the responce:  12.049400292  seconds"
+
+"Total time for the request:  13.99692875  seconds"
+
+"Response generation speed: 5.411057680877982e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: lfm3:latest | TEMP: 1.0 ======"
+
+"The argument goes like this:
+
+1. **Premise:** *All men are mortal.*  
+   Formally: ∀x [Man(x) → Mortal(x)].
+
+2. **Premise / Given:** *Socrates is a man.*  
+   Formally: Man(Socrates).
+
+3. **Conclusion:** *Therefore, Socrates is mortal.*  
+   From 1 & 2: Since every thing that is a man is mortal, and Socrates is one such thing (a man), Socrates must be mortal.
+
+This is exactly the pattern of a **categorical syllogism** (modus Barbara):
+
+- All‑A (men) are B (mortal).  
+- C is A (Socrates is a man).  
+- Therefore, C is B (Socrates is mortal).
+
+Because the premises hold in reality—historians agree that Socrates lived and died, and “all men” includes everyone including him—it’s not just a formal proof; it’s also factually correct that Socrates was mortal.
+
+So **yes**, given the two statements, we can logically deduce that Socrates is mortal."
+
+
+"Time spent generating the responce:  13.299650292  seconds"
+
+"Total time for the request:  13.352370333  seconds"
+
+"Response generation speed: 5.3836002021097354e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: lfm3-omni:latest | TEMP: 0.0 ======"
+
+"Yes, that is a valid and correct logical argument. It is a classic example of a **syllogism**.
+
+Here is the breakdown of the logic:
+
+1.  **Major Premise:** All men are mortal. (This is a universal statement).
+2.  **Minor Premise:** Socrates is a man. (This is a specific instance of the first premise).
+3.  **Conclusion:** Therefore, Socrates is mortal. (This follows logically from the premises).
+
+**Why it works:**
+The second premise ("Socrates is a man") acts as a bridge. Because Socrates is a man, and the first premise states that *all* men are mortal, it follows that Socrates must be mortal. The conclusion is necessarily true if the premises are true."
+
+
+"Time spent generating the responce:  2.261403375  seconds"
+
+"Total time for the request:  4.094231791  seconds"
+
+"Response generation speed: 6.854150909719944e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: lfm3-omni:latest | TEMP: 1.0 ======"
+
+"Yes, the conclusion is valid. This is a classic example of a **syllogism**.
+
+Here is the breakdown of the logic:
+
+1.  **Major Premise:** All men are mortal.
+2.  **Minor Premise:** Socrates is a man.
+3.  **Conclusion:** Therefore, Socrates is mortal.
+
+Because the second premise states that Socrates is a member of the group "men," and the first premise states that *all* men are mortal, it logically follows that Socrates must be mortal."
+
+
+"Time spent generating the responce:  1.61058725  seconds"
+
+"Total time for the request:  1.648679792  seconds"
+
+"Response generation speed: 6.519361183319935e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: qwen3.5:4b | TEMP: 0.0 ======"
+
+"Yes, that is correct.
+
+This is a classic example of a **valid categorical syllogism**. In formal logic, it follows the structure known as **Barbara** (AAA-1). Because the premises ("All men are mortal" and "Socrates is a man") are accepted as true, the conclusion ("Socrates is mortal") necessarily follows."
+
+
+"Time spent generating the responce:  26.756892125  seconds"
+
+"Total time for the request:  29.515281292  seconds"
+
+"Response generation speed: 2.8142281864508582e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: qwen3.5:4b | TEMP: 1.0 ======"
+
+"Yes, that statement is **logically valid**.
+
+It is a classic example of a **categorical syllogism** (specifically in the form known as *Barbara* in Aristotelian logic). Here is why:
+
+1.  **Premise 1:** All men are mortal. (Universal premise)
+2.  **Premise 2:** Socrates is a man. (Particular/Existential premise regarding Socrates)
+3.  **Conclusion:** Therefore, Socrates is mortal.
+
+Since the premises define the properties of "man" and place Socrates within that category, the conclusion follows necessarily from the rules of deductive logic. If both premises are true, the conclusion must be true as well."
+
+
+"Time spent generating the responce:  37.534709708  seconds"
+
+"Total time for the request:  37.614709375  seconds"
+
+"Response generation speed: 2.77343293207387e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: gemma4:e2b | TEMP: 0.0 ======"
+
+"This argument is **logically valid**.
+
+It follows a classic structure called a syllogism:
+
+1. **Major Premise:** All men are mortal. (General rule)
+2. **Minor Premise:** Socrates is a man. (Specific case)
+3 **Conclusion:** Therefore, Socrates is mortal. (Application of the rule)
+
+If you accept the premises as true (which they are in this context), the conclusion **must** be true."
+
+
+"Time spent generating the responce:  3.933543583  seconds"
+
+"Total time for the request:  9.281334541  seconds"
+
+"Response generation speed: 9.584233453757057e-08 tokens/seconds"
+
+--------------------------------------------------
+
+"====== MODEL: gemma4:e2b | TEMP: 1.0 ======"
+
+"Yes, the conclusion is logically sound based on the premises.
+
+This is an example of a valid deductive argument (a syllogism):
+
+1. **Major Premise:** All men are mortal.
+2. **Minor Premise:** Socrates is a man.
+3 **Conclusion:** Therefore, Socrates is mortal.
+
+If you accept the first two statements as true, the conclusion *must* logically follow."
+
+
+"Time spent generating the responce:  3.669606708  seconds"
+
+"Total time for the request:  3.671453833  seconds"
+
+"Response generation speed: 8.99278931664739e-08 tokens/seconds"
 
 --------------------------------------------------
 
