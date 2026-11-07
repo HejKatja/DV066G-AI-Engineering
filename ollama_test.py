@@ -6,7 +6,7 @@ import sys
 from ollama import chat
 
 MODELS = ["lfm3:latest", "lfm3-omni:latest", "qwen3.5:4b", "gemma4:e2b"]
-PROMPT = "All men are mortal, Socrates is a man, therefore Socrates is mortal?"
+PROMPT = "All men are mortal, Socrates is mortal, therefore Socrates is a man?"
 TEMPERATURES = [0.0, 1.0]
 SEED = 4242
 OUTPUT_FILE = "data/results.csv"

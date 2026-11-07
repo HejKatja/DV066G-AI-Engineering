@@ -19,11 +19,11 @@ The following models were selected for this experiment:<br><br>
 
 
 <br>
-The models were selected to provide a comparison between different model families, sizes and capabilities to explore how these differences affect their responces to identical prompts.<br><br>
+The models were selected to provide a comparison between different model families, sizes and capabilities to explore how these differences affect their responces to an identical prompt.<br><br>
 
-Each model was given the same input using temperatures **0.0** (which favors tokens with the highest probability) and **1.0** (which introduces more variability by allowing less probable tokens to be selected). A fixed seed (4242) was also used across all models and temperatures. <br>
+Each model was given the same intentionally invalid syllogism using and tested using temperatures **0.0** (which favors tokens with the highest probability) and **1.0** (which introduces more variability by allowing less probable tokens to be selected). A fixed seed (4242) was also used across all models and temperature settings. <br>
 
-The purpose of this experiment was not only to compare the responses of different local models but also to explore, to some extent, how temperature and seed parameters influence their outputs and to what extent models' responses are deterministic and reproducible under specific settings.
+The purpose of this experiment was to compare the local models' ability to identify invalid logical reasoning and to explore, to some extent, how temperature and seed parameters influence their outputs, as well as the extent to which models' responses are deterministic and reproducible under the same settings.
 
 ## Setup and Requirements 
 
@@ -88,7 +88,7 @@ python ollama_test.py
 
 ### 1. Response Correctness
 
-All models provided the correct answer to the prompt: *"All men are mortal, Socrates is a man, therefore Socrates is mortal?"*, although their explanations and wording varied. Since the given prompt is a classical example of syllogism, this demonstrates that all tested local models are able to perform basic logical reasoning.
+All models provided the correct answer to the prompt: *"All men are mortal, Socrates is mortal, therefore Socrates is a man?"*, although their explanations and wording varied. Since the given prompt is a classical example of syllogism, this demonstrates that all tested local models are able to perform basic logical reasoning.
 
 
 ### 2. Performance 
