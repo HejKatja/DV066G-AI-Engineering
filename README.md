@@ -97,20 +97,20 @@ To put the **token per second** (eval_rate), which measures the speed at which L
 
 For comparison, Anthropic's Claude Sonnet 5.5, as reported, achieved an ouput speed of 107.1 tokens/s compared with 58.4 tokens/s for Claude Fable 5.1. [emergent.sh/learn](https://emergent.sh/learn/claude-fable-5-1-high-vs-claude-sonnet-5-5-high)
 
-**Run 1**<br>
+**Katja. Run 1**<br>
 
 
 
-|     Model     |   eval_duration    |   total_duration    |   eval_rate  |  temperature     |
+|     Model     |   eval_duration    |   total_duration    |   tokens/s   |  temperature     |
 | ------------- | ------------------ | ------------------- | ------------ | ---------------- |
-|     LFM3      |        11.831      |       13.123        | 5.510        | 0.0              |
-|     LFM3      |        13.024      |       13.067        | 5.497        | 1.0              |
-|   LFM3-Omni   |        2.280       |       4.474         | 6.796        | 0.0              |
-|   LFM3-Omni   |        1.564       |       1.603         | 6.712        | 1.0              |
-|   Qwen3.5:4B  |       27.012       |       29.865        | 2.787        | 0.0              |
-|   Qwen3.5:4B  |       37.055       |       37.147        | 2.809        | 1.0              |
-|   Gemma4:e2b  |       3.974        |       9.328         | 9.484        | 0.0              |
-|   Gemma4:e2b  |       4.731        |       4.732         | 8.729        | 1.0              |          
+|     LFM3      |        21.62       |       23.02         | 52.3         | 0.0              |
+|     LFM3      |        31.95       |       31.99         | 56.2         | 1.0              |
+|   LFM3-Omni   |        5.05        |       7.04          | 69.0         | 0.0              |
+|   LFM3-Omni   |        2.12        |       2.16          | 68.4         | 1.0              |
+|   Qwen3.5:4B  |       82.56        |       85.34         | 28.5         | 0.0              |
+|   Qwen3.5:4B  |       76.52        |       76.59         | 28.4         | 1.0              |
+|   Gemma4:e2b  |       4.92         |       10.33         | 90.7         | 0.0              |
+|   Gemma4:e2b  |       8.45         |       8.45          | 86.3         | 1.0              |          
 
 
 
